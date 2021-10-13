@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bussiness Card | Glass Effect</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/f4/78/29/f4782997a18ba74a3113ac764fffafb4.jpg" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url(https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            transition: 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: scale(1.2);
+        }
+
+        .card::before {
+            content: 'Address: CBIT Gandipet-500075';
+            position: absolute;
+            bottom: 0;
+            left: 50;
+            width: 100%;
+            height: 80px;
+            background-color: rgb(135, 182, 148);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card .content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-top: -80px;
+            gap: 20px;
+        }
+
+        .card .content .image {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 0%;
+            /* box-shadow: 0 0  0 10px rgba(255, 255, 255, 0.1); */
+        }
+
+        .card .content .image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card .content .details {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #111;
+        }
+
+        .card .content .details div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card .content .details h3 s {
+            font-weight: 600;
+        }
+
+        .card .content .details icon-icon {
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/f4/78/29/f4782997a18ba74a3113ac764fffafb4.jpg" alt="">
+            </div>
+            <div class="details">
+                <div>
+                    <h3>Mohammed Faisal Hussain</h3>
+                </div>
+                <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>+91 000 000 0000</span>
+                </div>
+                <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>+91 000 000 0000</span>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>someone@xyz.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
